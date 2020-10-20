@@ -33,25 +33,19 @@ class Student extends Person{
     }
     char calculate(){
         int sum =0;
-        for(int s : scores){
+        for(int s : scores)
             sum += s;
-        }
         int cal = sum/scores.length;
-         if(cal >=90){
+         if(cal >=90)
              return 'O';
-         }
-         else if(cal >=80){
+         else if(cal >=80)
              return 'E';
-         }
-         else if(cal >=70){
+         else if(cal >=70)
              return 'A';
-         }
-         else if(cal >=55){
+         else if(cal >=55)
              return 'P';
-         }
-         else if(cal >= 40){
+         else if(cal >= 40)
              return 'D';
-         }
          else return 'T';
     }
 }
